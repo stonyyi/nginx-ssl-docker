@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# copy the configuraiton file
+cp /service/config/nginx.conf /usr/local/etc/nginx.conf
+
+# start
+/usr/local/sbin/nginx
+
+# tail the logs
+tail -f /var/log/access.log
