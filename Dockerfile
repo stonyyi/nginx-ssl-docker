@@ -27,6 +27,8 @@ RUN make clean
 
 # make a tmp directory for some nginx intermediate files
 RUN mkdir /tmp/nginx
+RUN mkdir /usr/local/etc/sites-available
+RUN mkdir /usr/local/etc/sites-enabled
 
 # make sure the ffmpeg transcoding log file exists
 RUN touch /var/log/access.log

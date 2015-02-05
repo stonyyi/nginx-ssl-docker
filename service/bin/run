@@ -2,6 +2,8 @@
 
 # copy the configuraiton file
 cp /service/config/nginx.conf /usr/local/etc/nginx.conf
+cp /service/config/rtc-transmuxer.conf /usr/local/etc/sites-available/rtc-transmuxer.conf
+ln -s /usr/local/etc/sites-available/rtc-transmuxer.conf /usr/local/etc/sites-enabled/rtc-transmuxer
 
 # start
 /usr/local/sbin/nginx
