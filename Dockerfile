@@ -39,5 +39,6 @@ CMD ["/service/bin/run"]
 
 # configuration
 EXPOSE 80
+EXPOSE 443
 
 # CERTS: /etc/nginx/certs
