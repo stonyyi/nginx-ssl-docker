@@ -2,7 +2,7 @@ FROM cine/base-image-docker
 
 MAINTAINER Thomas Shafer <thomas@cine.io>
 
-# get sources for nginx, ffmpeg and nginx-rtmp-module
+# get sources for nginx
 WORKDIR /usr/src
 RUN git clone git@github.com:nginx/nginx.git
 
